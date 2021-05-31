@@ -1,0 +1,13 @@
+header {
+    border-bottom: 1px solid;
+    border-color: $bottom-line-header;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
+  }

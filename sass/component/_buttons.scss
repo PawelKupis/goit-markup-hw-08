@@ -15,9 +15,7 @@
     right: 30px;
   }
 }
-.btn-mobile-menu__icon-burger {
-    fill:$main-color;
-  }
+
 
 .btn-mobile-menu.is-open {
   position: fixed;
@@ -40,8 +38,6 @@
 .btn-mobile-menu:hover .btn-mobile-menu__icon-cross {
   fill: $blue-color;
 }
-
-
 
 .btn {
   border: 0;

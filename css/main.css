@@ -541,10 +541,6 @@ form {
   }
 }
 
-.btn-mobile-menu__icon-burger {
-  fill: #212121;
-}
-
 .btn-mobile-menu.is-open {
   position: fixed;
 }

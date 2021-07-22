@@ -200,9 +200,10 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1000;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -274,7 +275,7 @@ form {
 }
 
 .form__input {
-  width: 448px;
+  width: 370px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
@@ -293,8 +294,14 @@ form {
   border-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__input {
+    width: 448px;
+  }
+}
+
 .form__comment {
-  width: 448px;
+  width: 370px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
@@ -315,9 +322,15 @@ form {
   border-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__comment {
+    width: 448px;
+  }
+}
+
 .form__declaration {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -334,6 +347,13 @@ form {
   top: 1px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .form__declaration {
+    font-size: 14px;
+    line-height: 1.78;
+  }
 }
 
 .form__checkbox {

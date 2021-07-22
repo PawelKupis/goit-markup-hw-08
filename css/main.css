@@ -202,7 +202,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 40px;
+  margin: auto;
   transform: translate(-50%, -50%) scale(1);
   z-index: 1000;
   width: 450px;
@@ -215,7 +215,7 @@ header {
 
 @media screen and (max-width: 479px) {
   .modal {
-    width: 100%;
+    width: 94%;
     height: 100%;
   }
 }
@@ -255,6 +255,7 @@ form {
 }
 
 .form__label {
+  width: 100%;
   position: relative;
   font-size: 12px;
   line-height: 1.167;
@@ -272,13 +273,19 @@ form {
 }
 
 .form__btn {
-  margin-right: 124px;
-  margin-left: 124px;
   margin-top: 30px;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__btn {
+    margin-right: 124px;
+    margin-left: 124px;
+  }
 }
 
 .form__input {
-  width: 100%;
+  min-width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;

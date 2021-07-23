@@ -222,7 +222,6 @@ header {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
   }
 }
 
@@ -260,6 +259,15 @@ form {
   line-height: 1.167;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+@media screen and (max-width: 479px) {
+  .form__label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
 }
 
 .form__icon {
@@ -341,7 +349,17 @@ form {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  height: 20px;
   color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+  .form__declaration {
+    flex-wrap: wrap;
+  }
 }
 
 .form__declaration::before {
@@ -353,9 +371,15 @@ form {
   border-radius: 2px;
   margin-right: 8px;
   position: relative;
-  top: 1px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .form__declaration::before {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

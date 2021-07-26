@@ -1,9 +1,8 @@
 .container {
   width: 100%;
-  padding-left: 0 15px;
+  padding:0 15px;
   margin: 0 auto;
-}
-
+  
   @media screen and (min-width: $mobile) {
     .container{
     max-width: $mobile;
@@ -19,19 +18,14 @@
     max-width: $desktop;
     }
   }
+}
 
-
-.containerz {
-    width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    .header & {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #ececec;
-    }  
+.container {
+    //width: 1200px;
+    //padding: 0 15px;
+    //margin-left: auto;
+    //margin-right: auto;
+    //align-items: center;
     .hero & {
       display: flex;
       flex-direction: column;

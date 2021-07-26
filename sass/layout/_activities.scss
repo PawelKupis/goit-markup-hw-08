@@ -1,3 +1,10 @@
+.activities{
+  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .offer {
   display: flex;
   justify-content: space-between;

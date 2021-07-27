@@ -76,9 +76,17 @@
   margin: 0 auto;
 }
 .newsletter__btn {
-  align-self: flex-end;
   display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
 }
+
+
 .blue-btn {
     background: #f5f4fa;
     border-radius: 4px;

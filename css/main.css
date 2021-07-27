@@ -1280,9 +1280,42 @@ form {
   background: #2f303a;
 }
 
+.wrapper-footer {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-footer {
+    flex-wrap: nowrap;
+    text-align: start;
+  }
+}
+
 .footer__nav {
   min-width: 246px;
   margin-right: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__nav {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-address {
+    text-align: start;
+  }
 }
 
 .address__link {
@@ -1304,6 +1337,24 @@ form {
 
 .address__item:nth-child(2) {
   margin: 9px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .join-us {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-us {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-us {
+    margin-left: 70px;
+  }
 }
 
 .join-us__link {

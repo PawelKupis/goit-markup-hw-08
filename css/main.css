@@ -1468,9 +1468,41 @@ select,
 
 .filters {
   display: flex;
-  justify-content: space-between;
-  width: 572px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
+}
+
+.filters__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filters__item:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .filters__item:last-child {
+    margin-top: 15px;
+  }
 }
 
 .filters__btn {
@@ -1506,6 +1538,35 @@ select,
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .examples {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
+
+.examples__item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.examples__item:hover, .examples__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.examples__item:hover .examples__overlay {
+  transform: translateY(0);
+}
+
+.examples__item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 
 .examples__overlay {
@@ -1553,24 +1614,5 @@ select,
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.examples__item {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.examples__item:hover, .examples__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.examples__item:hover .examples__overlay {
-  transform: translateY(0);
-}
-
-.examples__item:nth-child(n + 7) {
-  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

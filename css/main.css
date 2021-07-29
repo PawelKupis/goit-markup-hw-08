@@ -200,6 +200,7 @@ header {
 @media screen and (max-width: 479px) {
   .modal {
     width: 98%;
+    top: 60%;
   }
 }
 

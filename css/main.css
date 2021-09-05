@@ -256,8 +256,6 @@ form {
 }
 
 .form__icon {
-  width: 13px;
-  height: 13px;
   position: absolute;
   top: 45%;
   left: 14px;
@@ -266,14 +264,9 @@ form {
 
 .form__btn {
   margin-top: 30px;
+  padding-right: 76px;
+  padding-left: 76px;
   align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .form__btn {
-    margin-right: 124px;
-    margin-left: 124px;
-  }
 }
 
 .form__input {
@@ -318,6 +311,7 @@ form {
 
 .form__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-size: 14px;
 }
 
 .form__comment:focus {
@@ -617,8 +611,8 @@ form {
 
 .btn {
   border: 0;
-  width: 200px;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #2196f3;
   color: #ffffff;
   font-weight: 700;
@@ -632,8 +626,8 @@ form {
 }
 
 .hero__btn {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-right: 41px;
+  padding-left: 42px;
 }
 
 .footer-form-btn {
@@ -655,6 +649,8 @@ form {
 }
 
 .newsletter__btn {
+  padding-right: 28px;
+  padding-left: 42px;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -725,7 +721,7 @@ form {
   color: #ffffff;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -961,7 +957,6 @@ form {
   }
   */
 .hero {
-  height: 400px;
   margin: 0 auto;
   text-align: center;
   padding: 118px 0;
@@ -999,7 +994,7 @@ form {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 100vw;
+    width: 100%;
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
@@ -1037,29 +1032,6 @@ form {
   }
 }
 
-/*
-.hero {
-   text-align: center;
-    background-image: linear-gradient(
-        $background-hero,
-        $background-hero
-      ),
-      url("../images/background/headerbackground.jpg");
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .container .hero__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .hero__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }*/
 .strengths__list {
   display: block;
 }
@@ -1628,6 +1600,7 @@ select,
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .examples__category {

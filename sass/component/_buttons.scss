@@ -41,8 +41,8 @@
 
 .btn {
   border: 0;
-  width: 200px;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: $blue-color;
   color: $white-color;
   font-weight: 700;
@@ -55,8 +55,8 @@
   cursor: pointer;
 }
 .hero__btn {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-right: 41px;
+  padding-left: 42px;
 }
 .footer-form-btn {
   min-width: 82px;
@@ -76,6 +76,8 @@
   margin: 0 auto;
 }
 .newsletter__btn {
+  padding-right: 28px;
+  padding-left: 42px;
   display: flex;
   margin: 0 auto;
   align-items: center;
